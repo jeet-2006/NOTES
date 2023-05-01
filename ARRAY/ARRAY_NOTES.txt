@@ -1,0 +1,34 @@
+*PASSING 2D ARRAY AS ARGUMENT*
+
+--> int fun (a[][]) = this way not possible.
+--> int fun (a[][C]) = We have to specify column as C++ convert 2d array in 1d only
+	EX: a[][] = {
+		{1, 2}, {2, 3}
+	}
+	for this 2x2 array it will convert in 1D array of length 4 which contains index as [00, 01, 10, 11].
+	here based on column number it will seprated. 1st column -> [00, 01]. 2nd column [10, 11].
+
+==> now here we are discussing about efficient way.
+	int dp[m][n];
+	fun((int *)dp); call like this.
+
+	//Use like this Example:
+	int fun (int *dp, int r, int c) {
+		for (int i=0; i<r; i++) {
+			for (int j=0; j<c; j++) {
+				cout<<*(dp + i*c + j)<<" "; //we are specifing that first we need to jump C num of column.
+			}
+		    cout<<endl;
+		}
+	}
+	int main() {
+	    // Write C++ code here
+	    int a[2][2] = {
+			{1, 2}, {2, 3}
+		};
+		fun((int *)a, 2, 2);
+	    return 0;
+	}
+------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,10 @@
+DYNAMIC PROGRAMMING: 
+
+--> divide problems in small sub problems. is we are doing repetive task then we need to store that task.
+
+--> for n level of tree space complexity of recursion is O(n) as stack poping out last value.
+
+--> try to create tree for problem then analyze repetive operation in tree.
+
+*GRID TRAVALLER PROBLEM*
+--> possible way to reach a, b  is equal to b, a => grid(a, b)  = grid(b, a). 

@@ -1,0 +1,14 @@
+*2 WAYS FOR ALLOCATING MEMORY IN C++*
+
+1->	Using Stack :
+
+ -> Memory automatically mmanaged by compiler.
+ -> Object is automatically destroyed when it goes out of scope. 
+ -> Out of scope: if u create obj in any func scope of that obj is that fun. 
+ -> After end of that func it will destroy automatically.
+ -> Ex: MyClass myObject;
+
+2-> Using Heap :
+
+ -> 
+ 
